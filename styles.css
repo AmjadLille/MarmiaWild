@@ -14,5 +14,42 @@
 /* footer */
 
 .footer {
-  background-color: bisque;
+  background-color: rgb(0, 0, 0);
+  opacity: 75%;
+}
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.footer-item {
+  padding: 50px;
+  list-style-type: none;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(252, 248, 248);
+  font-size: 25px;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.svg-icon {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+footer i {
+  padding: 20px;
+  margin: 20px;
 }
