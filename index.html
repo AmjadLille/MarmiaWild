@@ -9,38 +9,31 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <link rel="stylesheet" href="styles.css">
         
     </head>
     <body>
-      
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-           <div class="col-6">   <a class="navbar-brand" href="#">Navbar w/ text</a> </div>
-           <div class="col-6"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-              </ul>
-            </div>
-            </div>
-          </nav>
-          <div class="receipe">
+
+        <div class="background"> 
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">MARMI WILD</a></li>
+                <li class="item"><a href="#">home</a></li>
+                <li class="item"><a href="#">receipes</a></li>
+                <li class="item"><a href="#">about us</a></li>
+                <li class="item"><a href="#">contact</a> </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+            <div class="receipe">
             <p class="description">MarmiWild is a great site for Web Dev to learn and start cook their meal in very easy way</p>
 
 
@@ -57,6 +50,39 @@
             <button id="displayReceipe">View all receipes</button>
           </div>
           <hr>
-           
+
+
+          <footer class="footer">
+            <!-- footer list -->
+            <div>
+              <ul class="footer-menu">
+                <li class="footer-item">
+                  <a href="#" class="footer-link">term of use</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-link">privacy policy</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-link">about us</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-link">contact us</a>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- footer social-media icons -->
+
+            <div class="footer-icons">
+              <i class="svg-icon" style="background-image: url(/footer-icons/facebook.svg);"></i>
+              <i class="svg-icon" style="background-image: url(/footer-icons/instagram.svg);"></i>
+              <i class="svg-icon" style="background-image: url(/footer-icons/snapchat.svg);"></i>
+              <i class="svg-icon" style="background-image: url(/footer-icons/tik-tok.svg);"></i>
+              <i class="svg-icon" style="background-image: url(/footer-icons/whatsapp.svg);"></i>
+              <i class="svg-icon" style="background-image: url(/footer-icons/youtube.svg);"></i>
+            </div>
+            <p class="copyright">Marmi Wild &#169;copyright 2020</p>
+
+          </footer>
     </body>
 </html>
