@@ -235,3 +235,37 @@ footer i {
   padding: 20px;
   margin: 20px;
 }
+/* fat */
+.gridFat{
+  background-color: rgb(218, 214, 217);
+  display: grid;
+  padding: 40px;
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+  grid-template-columns: 800px auto;
+}
+
+.gridFatItem {
+  background-color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.FatPictures{
+  height: 30vh;
+  width: 30vw;
+  margin: 2rem;
+}
+.AutorPicture{
+  height: 30vh;
+  width: 15vw;
+  margin: 2rem;
+}
+
+.SecondAutorPicture{
+  height: 30vh;
+  width: 20vw;
+  margin: 2rem;
+}
