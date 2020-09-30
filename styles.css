@@ -11,7 +11,7 @@
   font-size: larger;
 }
 
-/*--------------RECEIPE--------------*/
+/*--------------RECIPE--------------*/
 
 .description {
   display: flex;
@@ -70,7 +70,7 @@
 .receipe-list > div > button {
   position: absolute;
   bottom: 1em;
-  right: 4em;
+  right: 30%;
   font-family: Sansation;
   font-style: normal;
   font-weight: normal;
@@ -95,9 +95,12 @@ nav {
   padding: 0 15px;
 }
 a {
-  color: black;
-  text-decoration: none;
+  color: green;
   font-size: 3vh;
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 .logo {
@@ -122,6 +125,7 @@ a {
 }
 .item:not(.button) a:hover {
   color: #ccc;
+  text-decoration: none;
 }
 ul {
   display: flex;
