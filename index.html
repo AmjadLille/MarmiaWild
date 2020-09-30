@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -17,9 +18,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-    </head>
-    <body>
-
+<header>
         <div class="background"> 
         <nav>
             <ul class="menu">
@@ -50,30 +49,34 @@
             <button id="displayReceipe">View all receipes</button>
           </div>
           <hr>
+           <h2 class="contact">Contact Us</h2>
+    <p class="susbcribe">subscribe in our letter</p>
+  <form id="myform" class="cssform">
+    <div class ="alignement">
+       <input type="text"  placeholder="your name" required/>
+    
+       <input type="text"  placeholder="your email" required/>
+    </div>   
+    
+    <div class = "button">
+       <input style="border:1px" type="button"  value="subscribe" />
+    </div>
+    
+    <p>
+    <textarea id="comments" class ="area" rows="7" cols="30" placeholder="your message..."></textarea>
+    </p>
+    
+    <div class = "button">
+        <input style="border:1px" type="button" value="send" />
+    </div>
+      </form>
 
+     
 
-          <footer class="footer">
-            <!-- footer list -->
-            <div>
-              <ul class="footer-menu">
-                <li class="footer-item">
-                  <a href="#" class="footer-link">term of use</a>
-                </li>
-                <li class="footer-item">
-                  <a href="#" class="footer-link">privacy policy</a>
-                </li>
-                <li class="footer-item">
-                  <a href="#" class="footer-link">about us</a>
-                </li>
-                <li class="footer-item">
-                  <a href="#" class="footer-link">contact us</a>
-                </li>
-              </ul>
-            </div>
-            
-            <!-- footer social-media icons -->
+</section>
 
-            <div class="footer-icons">
+<footer>
+  <div class="footer-icons">
               <a href="#">
                 <i class="svg-icon" style="background-image: url(/footer-icons/facebook.svg);"></i>
               </a>
