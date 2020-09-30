@@ -1,14 +1,63 @@
-.navbar-brand {
-  font-style: bold;
+/* Nav bar  */
+nav {
+  padding: 0 15px;
+}
+
+.logo a{
+  color: black;
+  font-size: 3vh;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+  list-style: none;
+  margin-right: 70vh;
+}
+.logo a {
+  font-size: 3vh;
+  font-weight: bold;
+  
+}
+.item {
+  padding: 10px;
+  margin-left: 2rem;
+  border-radius: 30px;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.item > a{
+  color: black;
   font-size: larger;
 }
 
-.nav-item {
-  padding: 0.2rem 1rem;
-  opacity: 70%;
+.item > a:hover {
+  color: #ccc;
+  text-decoration: none;
 }
-.nav-link {
-  font-size: larger;
+.logo > a:hover{
+  color: black;
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-right: 20vh;
+}
+
+.background {
+  background-image: url("https://www.abouther.com/sites/default/files/2020/05/29/go_cook_-go_cook_hero_shot_2.jpg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /*--------------RECIPE--------------*/
@@ -91,58 +140,7 @@ body {
   font-family: sans-serif;
   font-size: 16px;
 }
-nav {
-  padding: 0 15px;
-}
-a {
-  color: green;
-  font-size: 3vh;
-}
 
-a:visited {
-  text-decoration: none;
-}
-
-.logo {
-  font-size: 20px;
-  padding: 7.5px 10px 7.5px 0;
-  margin-right: 80vh;
-  list-style: none;
-}
-.logo a {
-  font-size: 3vh;
-  font-weight: bold;
-}
-.item {
-  padding: 10px;
-  margin-left: 2rem;
-  border-radius: 30px;
-  list-style: none;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.item.button {
-  padding: 9px 5px;
-}
-.item:not(.button) a:hover {
-  color: #ccc;
-  text-decoration: none;
-}
-ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin-right: 20vh;
-}
-
-.background {
-  background-image: url("https://www.abouther.com/sites/default/files/2020/05/29/go_cook_-go_cook_hero_shot_2.jpg");
-  height: 70vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
 
 /* Form */
 
