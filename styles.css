@@ -190,6 +190,7 @@ input {
   grid-template-columns: 200px 200px 120px;
   align-items: center;
   margin-left: 50px;
+  border: none;
 }
 .button {
   width: 80px;
