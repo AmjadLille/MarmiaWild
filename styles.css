@@ -151,7 +151,7 @@ body {
   font-size: 18px;
 }
 form {
-  margin-left: auto;
+  margin-left: 400px;
   margin-right: auto;
   width: 500px;
 }
@@ -161,7 +161,9 @@ form {
 }
 input {
   background: rgba(196, 196, 196, 0.5);
-  padding-top: 10px;
+  padding-top: 20px;
+  margin: 30px;
+  
 }
 .area {
   background: rgba(196, 196, 196, 0.5);
@@ -170,10 +172,14 @@ input {
   width: 700px;
   grid-template-columns: 200px 200px 120px;
   align-items: center;
+  margin-left : 45px;
 }
 .button {
-  width: 70px;
-  margin: auto;
+  
+  margin-left: 50px;
+  margin-right: 300px;
+  width: 100px;
+  
 }
 .alignement {
   margin: 20px;
