@@ -1,4 +1,6 @@
 
+
+
 /* Nav bar  */
 nav {
   padding: 0 15px;
@@ -170,10 +172,12 @@ input {
   width: 700px;
   grid-template-columns: 200px 200px 120px;
   align-items: center;
+  margin-left : 50px;
 }
 .button {
-  width: 70px;
+  width: 80px;
   margin: auto;
+  margin-left: 50px;
 }
 .alignement {
   margin: 20px;
