@@ -7,7 +7,7 @@ nav {
   color: rgb(47, 51, 59);
   font-size: 50px;
   font-weight: bold;
-  font-family: "Abril Fatface", cursive;
+  font-family: "Oswald", sans-serif;
   letter-spacing: 0.05em;
 }
 
@@ -111,10 +111,11 @@ header {
   height: 111px;
 
   font-family: "Oswald", sans-serif;
-  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 36px;
   line-height: 40px;
   text-align: center;
   background: rgba(228, 226, 226, 0.932);
@@ -129,22 +130,20 @@ header {
   position: absolute;
   bottom: 1em;
   right: 30%;
-  font-family: Sansation;
-  font-style: normal;
-  font-weight: normal;
-
   line-height: 40px;
   text-align: center;
-  background: rgba(196, 196, 196, 0.6);
+  background: rgba(196, 196, 196, 0.575);
   border-radius: 30px;
   padding: 20px;
+  border: none;
 }
 .receipe-list > div > button > a {
   text-decoration: none;
   color: black;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
   letter-spacing: 0.02em;
-  font-size: 36px;
+  font-size: 32px;
 }
 
 * {
@@ -166,6 +165,8 @@ body {
 .susbcribe {
   text-align: center;
   font-size: 18px;
+  margin-right: 190px;
+  margin-top: 70px;
 }
 form {
   margin-left: auto;
