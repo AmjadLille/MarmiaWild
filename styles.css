@@ -1,14 +1,14 @@
-
-
-
 /* Nav bar  */
 nav {
   padding: 0 15px;
 }
 
-.logo a{
-  color: black;
-  font-size: 3vh;
+.logo a {
+  color: rgb(47, 51, 59);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.05em;
 }
 
 a:visited {
@@ -16,16 +16,11 @@ a:visited {
 }
 
 .logo {
-  font-size: 20px;
   padding: 7.5px 10px 7.5px 0;
   list-style: none;
   margin-right: 70vh;
 }
-.logo a {
-  font-size: 3vh;
-  font-weight: bold;
-  
-}
+
 .item {
   padding: 10px;
   margin-left: 2rem;
@@ -33,17 +28,17 @@ a:visited {
   list-style: none;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.item > a{
+.item > a {
   color: black;
   font-size: larger;
 }
 
 .item > a:hover {
-  color: #ccc;
+  color: rgb(99, 94, 94);
   text-decoration: none;
 }
-.logo > a:hover{
-  color: black;
+.logo > a:hover {
+  color: rgb(146, 140, 140);
   text-decoration: none;
 }
 ul {
@@ -62,7 +57,9 @@ ul {
   background-size: cover;
   position: relative;
 }
-
+header {
+  margin-bottom: 60px;
+}
 
 /*--------------RECIPE--------------*/
 
@@ -73,11 +70,14 @@ ul {
   justify-content: center;
   font-size: 1.5em;
   text-align: center;
-  font-family: Sansation;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 2em;
   font-style: normal;
-  font-weight: normal;
   font-size: 36px;
   line-height: 40px;
+  margin-bottom: 70px;
 }
 .receipe {
   display: flex;
@@ -110,30 +110,41 @@ ul {
   width: 408px;
   height: 111px;
 
-  font-family: Sansation;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  background: rgba(196, 196, 196, 0.6);
+  background: rgba(228, 226, 226, 0.932);
   border-radius: 48px;
+  opacity: 85%;
+  border: none;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .receipe-list > div > a > button {
   position: absolute;
   bottom: 1em;
   right: 30%;
-  font-family: Sansation;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
   line-height: 40px;
   text-align: center;
-  background: rgba(196, 196, 196, 0.6);
+  background: rgba(196, 196, 196, 0.575);
   border-radius: 30px;
+  padding: 20px;
+  border: none;
 }
-
+.receipe-list > div > button > a {
+  text-decoration: none;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 32px;
+}
 
 * {
   box-sizing: border-box;
@@ -145,12 +156,17 @@ body {
   font-size: 16px;
 }
 
-
 /* Form */
+
+.forms {
+  margin-top: 60px;
+}
 
 .susbcribe {
   text-align: center;
   font-size: 18px;
+  margin-right: 190px;
+  margin-top: 70px;
 }
 form {
   margin-left: auto;
@@ -162,22 +178,27 @@ form {
   font-size: 48px;
 }
 input {
-  background: rgba(196, 196, 196, 0.5);
+  background: rgba(233, 233, 233, 0.925);
   padding-top: 10px;
+  border: none;
 }
 .area {
-  background: rgba(196, 196, 196, 0.5);
+  background: rgba(233, 233, 233, 0.925);
   margin: 20px;
   display: grid;
   width: 700px;
   grid-template-columns: 200px 200px 120px;
   align-items: center;
-  margin-left : 50px;
+  margin-left: 50px;
+  border: none;
 }
 .button {
   width: 80px;
   margin: auto;
   margin-left: 50px;
+  background-color: rgb(131, 131, 207);
+  opacity: 50%;
+  text-align: center;
 }
 .alignement {
   margin: 20px;
@@ -193,6 +214,7 @@ input {
 .footer {
   background-color: rgb(0, 0, 0);
   opacity: 75%;
+  margin-top: 80px;
 }
 
 .footer-menu {
