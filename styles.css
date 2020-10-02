@@ -126,7 +126,7 @@ header {
   margin-top: 50px;
 }
 
-.receipe-list > div > a > button {
+.receipe-list > div > button {
   position: absolute;
   bottom: 1em;
   right: 30%;
