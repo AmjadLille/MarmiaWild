@@ -1,25 +1,18 @@
-(function () {
-  const trackScroll = () => {
-    let scrolled = window.pageYOffset;
-    let coords = document.documentElement.clientHeight;
+let intervalId = 0; // Needed to cancel the scrolling when we're at the top of the page
+const scrollButton = document.querySelector(".scroll"); // Reference to our scroll button
 
-    if (scrolled > coords) {
-      goTopBtn.classList.add("back_to_top-show");
-    }
-    if (scrolled < coords) {
-      goTopBtn.classList.remove("back_to_top-show");
-    }
-  };
+const scrollStep = () => {
+  // Check if we're at the top already. If so, stop scrolling by clearing the interval
+  if (window.pageYOffset === 0) {
+    clearInterval(intervalId);
+  }
+  window.scroll(0, window.pageYOffset - 50);
+};
 
-  const backToTop = () => {
-    if (window.pageYOffset > 0) {
-      window.scrollBy(0, -80);
-      setTimeout(backToTop, 0);
-    }
-  };
+const scrollToTop = () => {
+  // Call the function scrollStep() every 16.66 millisecons
+  intervalId = setInterval(scrollStep, 16.66);
+};
 
-  let goTopBtn = document.querySelector(".back_to_top");
-
-  window.addEventListener("scroll", trackScroll);
-  goTopBtn.addEventListener("click", backToTop);
-})();
+// When the DOM is loaded, this click handler is added to our scroll button
+scrollButton.addEventListener("click", scrollToTop);
