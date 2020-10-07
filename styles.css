@@ -314,3 +314,8 @@ div.arrow:hover::before {
 }
 /* 
 *****down Arrow******** */
+.events {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
