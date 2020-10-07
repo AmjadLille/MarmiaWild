@@ -61,7 +61,7 @@ function removeRecipe(recipeIndex) {
 function createCards(recipe) {
   recipe.forEach((recipe, index) => {
     let cardResponsive = document.createElement("div");
-    cardResponsive.className = "col-7 col-md-6";
+    cardResponsive.className = "col-12 col-md-6";
     cardResponsive.style.display = "flex";
     cardResponsive.style.justifyContent = "center";
     cardResponsive.style.margin = "5px 0";
@@ -78,6 +78,7 @@ function createCards(recipe) {
     cardImg.style.backgroundImage = `url(${recipe.imgSrc})`;
     cardImg.style.backgroundSize = "100%";
     cardImg.style.backgroundRepeat = "no-repeat";
+    cardImg.style.backgroundPosition = "center";
     cardImg.style.borderRadius = "10% 10% 0 0";
     cardDiv.appendChild(cardImg);
     let cardH5 = document.createElement("h5");
@@ -104,9 +105,5 @@ function createCards(recipe) {
     delButton.innerText = "Delete";
     delButton.addEventListener("click", () => removeRecipe(index));
     cardSubDiv.appendChild(delButton);
-    let modifyButton = document.createElement("button");
-    modifyButton.className = "btn btn-secondary";
-    modifyButton.innerText = "Modify";
-    cardSubDiv.appendChild(modifyButton);
   });
 }

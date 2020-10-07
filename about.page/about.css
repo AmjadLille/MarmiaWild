@@ -26,7 +26,6 @@ a:visited {
   margin-left: 2rem;
   border-radius: 30px;
   list-style: none;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 .item > a {
   color: black;
