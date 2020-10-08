@@ -60,51 +60,66 @@
     position: relative;
   }
   
-  
-    
-
-
-
-p { font-family: inherit;
+  p{ 
+    font-family: inherit;
     font-size: 15px;
     margin-top : 5px;
-
-}
+    font-style: oblique;
+  }
 
 
 .gridcontainer{
-    
-    background-color: rgb(238, 235, 236);
     display: grid;
     grid-template-columns: 600px 400px 400px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-column-gap : 10px;
-    margin : 20px;
- }
+    margin: 10px;
+    background-image:  url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2017%2F10%2F22%2F21%2F02%2Ffood-2879265_960_720.jpg&f=1&nofb=1');
+    background: linear-gradient(rgba(248, 246, 246, 0.815), rgba(194, 197, 209, 0.856));
+    background-repeat:no-repeat;
+    background-size: cover;
+   
+    
+   
+    
+  } 
 
- .item2 {
+.item2 {
      grid-column-start: 3 ;
-     margin: 120px;
-     padding-top: 70px;
+     margin: 20px;
+     padding-top : 175px;
+     font-size: 50px;
+     
+     
  }
   
-
   .picture {
-     width: 500px;
+     width: 400px;
      height: 300px;
-      background-color: rgb(218,214, 217);
-      margin: 70px
-      
-
-    
-  }
+     background-color: rgb(218,214, 217);
+     margin: 70px;
+     border-radius: 4px;
+     border: 1px solid #ddd;
+     box-shadow: 0 0 5px 3px rgba(215, 221, 223, 0.5);
+     -webkit-transform: scale(1);
+	   transform: scale(1);
+	   -webkit-transition: .3s ease-in-out;
+	   transition: .3s ease-in-out;
+     }
+  .picture:hover {
+    -webkit-transform: scale(1.3);
+	   transform: scale(1.3);
+   }
+   
  h3 {
-    text-decoration: underline;
+    
+    
     font-weight: bolder;
+    box-shadow: 0 0 5px 3px rgba(215, 221, 223, 0.9);
  }
   
  .rating a {
-    color: #aaa;
+    color: #aaaa;
     text-decoration: none;
     font-size: 3em;
     transition: color .4s;
@@ -130,4 +145,5 @@ p { font-family: inherit;
 
  h2{
      padding-top: 20px;
+  color: rgb(0, 123, 255);
  }
