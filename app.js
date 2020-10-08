@@ -101,6 +101,7 @@ function createCards(recipe) {
     let delButton = document.createElement("button");
     delButton.className = "btn btn-danger";
     delButton.innerText = "Delete";
+    delButton.style.margin = "0 10px";
     delButton.addEventListener("click", () => removeRecipe(index));
     cardSubDiv.appendChild(delButton);
   });
