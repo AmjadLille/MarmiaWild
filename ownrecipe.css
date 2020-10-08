@@ -36,3 +36,21 @@ h2 {
   height: 50vh;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 1000px) {
+  .board {
+    flex-direction: column;
+  }
+  .card {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .grosseDiv {
+    width: 50%;
+  }
+  .card {
+    width: 50vw;
+  }
+}

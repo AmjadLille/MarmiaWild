@@ -52,6 +52,7 @@ ul {
 .background {
   background-image: url("https://www.abouther.com/sites/default/files/2020/05/29/go_cook_-go_cook_hero_shot_2.jpg");
   height: 70vh;
+  width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

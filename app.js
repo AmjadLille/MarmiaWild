@@ -33,7 +33,6 @@ function saveRecipe(recipe) {
   localStorage.setItem("recipe", recipe);
 }
 // Function for adding a recipe
-// The image is a lorempicsum until i add the function to add an image
 function addRecipe(event) {
   event.preventDefault();
   let recipeName = document.getElementById("recipeName").value;
@@ -55,22 +54,20 @@ function removeRecipe(recipeIndex) {
   saveRecipe(recipe);
   createCards(recipe);
   location.reload();
-}
-
-// Create Bootstrap cards foreach recipes
+} // Create Bootstrap cards foreach recipes
 function createCards(recipe) {
+  const board = document.querySelector(".board");
+
   recipe.forEach((recipe, index) => {
     let cardResponsive = document.createElement("div");
     cardResponsive.className = "grosseDiv";
     cardResponsive.style.display = "flex";
-    cardResponsive.style.width = "50%";
     cardResponsive.style.justifyContent = "center";
-    cardResponsive.style.padding = "0 10px";
+    cardResponsive.style.padding = "10px 10px";
     board.appendChild(cardResponsive);
     let cardDiv = document.createElement("div");
     cardDiv.className = "card";
     cardDiv.style.borderRadius = "10%";
-    cardDiv.style.width = "50vw";
     cardResponsive.appendChild(cardDiv);
     let cardImg = document.createElement("div");
     cardImg.className = "card-img-top";
@@ -108,39 +105,3 @@ function createCards(recipe) {
     cardSubDiv.appendChild(delButton);
   });
 }
-
-$("#contact-form").bootstrapValidator({
-  //        live: 'disabled',
-  message: "This value is not valid",
-  feedbackIcons: {
-    valid: "glyphicon glyphicon-ok",
-    invalid: "glyphicon glyphicon-remove",
-    validating: "glyphicon glyphicon-refresh",
-  },
-  fields: {
-    Name: {
-      validators: {
-        notEmpty: {
-          message: "The Name is required and cannot be empty",
-        },
-      },
-    },
-    email: {
-      validators: {
-        notEmpty: {
-          message: "The email address is required",
-        },
-        emailAddress: {
-          message: "The email address is not valid",
-        },
-      },
-    },
-    Message: {
-      validators: {
-        notEmpty: {
-          message: "The Message is required and cannot be empty",
-        },
-      },
-    },
-  },
-});
