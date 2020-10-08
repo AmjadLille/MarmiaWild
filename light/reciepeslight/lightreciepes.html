@@ -1,4 +1,4 @@
-<html class="no-js">
+<html class=>
   <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
@@ -6,9 +6,11 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css"  href="styles.css" />
     <link rel="stylesheet" href="/button-move-up/button-move-up.css" />
-
+    
+    
+    
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -98,8 +100,9 @@
             data-src="https://img.sndimg.com:443/food/image/upload/c_thumb,q_80,w_60,h_60/v1/gk-static/gk/img/avatar/pie.png"
             lazy="loaded"
           />
-          <p class="cuisto">Recipe by <span>Loic</span></p>
         </div>
+          <p class="cuisto">Recipe by <span>Loic</span></p>
+        
         <h3>directions</h3>
         <p>
           Add the olive oil and garlic into a thick bottomed pan and fry for 30
@@ -271,6 +274,42 @@
         </p>
       </div>
     </div>
+    <div class="container">
+      
+      <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Indicateurs -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Carrousel -->
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="1500">
+            <img src="https://whitewatercrossing.org/GetImage.ashx?Guid=45db7917-53a5-4766-b86b-e00b75b5b15b" alt="Carrousel slide 1" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-interval="1500">
+            <img src="https://www.jtdyer.com/2010blog/wp-content/uploads/2015/04/eathabits.png" alt="Carrousel slide 2" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-interval="1500">
+            <img src="https://ac-franchise.com/wp-content/uploads/2018/07/12/20180712161655-246a21a2f267c457b7a32f50ee219185.jpg" alt="Carrousel slide 3" class="d-block w-100">
+          </div>
+        </div>
+        
+        
+        <!-- Contrôles -->
+        <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Précédent</span>
+        </a>
+        <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Suivant</span>
+        </a>
+      </div>
+    </div>
     <footer class="footer">
       <!-- footer list -->
       <div>
@@ -341,5 +380,6 @@
       <span class="arrow-up"></span>&uarr;
     </button>
     <script src="/button-move-up/button-move-up.js"></script>
+    
   </body>
 </html>
