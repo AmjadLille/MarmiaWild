@@ -49,6 +49,7 @@ ul {
   margin-right: 20vh;
 }
 
+
 .background {
   background-image: url("https://www.abouther.com/sites/default/files/2020/05/29/go_cook_-go_cook_hero_shot_2.jpg");
   height: 70vh;
@@ -70,38 +71,187 @@ body {
 }
 
 /* fat */
+.backColor{ 
+  background: linear-gradient(rgba(248, 246, 246, 0.815), rgba(194, 197, 209, 0.856));
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
 .gridFat {
-  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2017%2F10%2F22%2F21%2F02%2Ffood-2879265_960_720.jpg&f=1&nofb=1");
+ 
   display: grid;
-  padding: 40px;
-  grid-column-gap: 30px;
+  padding: 10px;
+  grid-column-gap: 20px;
   grid-row-gap: 50px;
-  grid-template-columns: 800px auto;
+  grid-template-columns: 400px 400px auto;
 }
 
 .gridFatItem {
-  background-color: rgb(243, 243, 243);
   font-size: 20px;
   padding: 20px;
   text-align: center;
   border-radius: 25px;
+ 
 }
 
 .FatPictures {
-  height: 30vh;
-  width: 30vw;
-  margin: 2rem;
-}
-.AutorPicture {
-  height: 30vh;
-  width: 15vw;
-  margin: 2rem;
+  width: 400px;
+   height: 300px;
+   margin: 70px 0px 0px 0px;
+   border-radius: 4px;
+   border: 1px solid #ddd;
+   box-shadow: 0 0 5px 3px rgba(215, 221, 223, 0.5);
+   -webkit-transition: .3s ease-in-out;
+   transition: .3s ease-in-out;
 }
 
-.SecondAutorPicture {
-  height: 30vh;
-  width: 20vw;
-  margin: 2rem;
+.FatPictures:hover{
+-webkit-transform: scale(1.3);
+transform: scale(1.3);
+}
+h3{
+  font-weight: bolder;
+  box-shadow: 0 0 5px 3px rgba(215, 221, 223, 0.9);
+}
+
+.ingr{
+  margin-top: 190px;
+}
+
+.rating a {
+  color: #aaaa;
+  text-decoration: none;
+  font-size: 3em;
+  transition: color .4s;
+}
+.rating a:hover,
+.rating a:focus {
+  color: orange;
+  cursor: pointer;
+}
+.showFull{
+  display: block;
+}
+.hiden{
+  display: none;
+}
+/* [ON SMALL SCREENS] */
+@media  (max-width: 768px){
+
+  .gridFat {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: auto;
+  }
+  
+  .gridFatItem {
+    font-size: 20px;
+    padding: 0px;
+    text-align: center;
+    border-radius: 25px;
+   
+  }
+  
+  .FatPictures {
+    width: 200px;
+     height: 100px;
+     margin: 10px 10px 10px 10px;
+     border-radius: 4px;
+     border: 1px solid #ddd;
+     box-shadow: 0 0 5px 3px rgba(215, 221, 223, 0.5);
+     -webkit-transition: .3s ease-in-out;
+     transition: .3s ease-in-out;
+  }
+  
+  .FatPictures:hover{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  }
+
+  .rating a {
+    color: #aaaa;
+    text-decoration: none;
+    font-size: 3em;
+    transition: color .4s;
+  }
+  .rating a:hover,
+  .rating a:focus {
+    color: orange;
+    cursor: pointer;
+  }
+  
+  
+  .ingr{
+    margin-top: 10px;
+  }
+  
+  h3{
+    font-weight: bolder;
+    box-shadow: 0 0 0px 3px rgba(215, 221, 223, 0.9);
+  }
+  
+  user-avatar__img{
+    height: 15px;
+    width: 15px;
+  }  
+}
+
+
+.hiden{
+  display: none;
+}
+@media (min-width: 767.99px) and (max-width: 992px){
+
+  .gridFat {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: auto;
+  }
+  
+  .gridFatItem {
+    font-size: 20px;
+    padding: 0px;
+    text-align: center;
+    border-radius: 25px;
+   
+  }
+  
+  .FatPictures {
+    width: 500px;
+     height: 300px;
+     margin: 10px 10px 10px 10px;
+     border-radius: 4px;
+     border: 1px solid #ddd;
+     box-shadow: 0 0 5px 3px rgba(215, 221, 223, 0.5);
+     -webkit-transition: .3s ease-in-out;
+     transition: .3s ease-in-out;
+  }
+  
+  .FatPictures:hover{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  }
+  
+  
+  .ingr{
+    margin-top: 15px;
+  }
+  
+  h3{
+    font-weight: bolder;
+    box-shadow: 0 0 0px 3px rgba(215, 221, 223, 0.9);
+  }
+  
+  user-avatar__img{
+    height: 15px;
+    width: 15px;
+  }  
+}
+.showFull{
+  display: none;
+}
+.hiden{
+  display: block;
 }
 
 /* footer */
