@@ -61,10 +61,11 @@ function removeRecipe(recipeIndex) {
 function createCards(recipe) {
   recipe.forEach((recipe, index) => {
     let cardResponsive = document.createElement("div");
-    cardResponsive.className = "col-12 col-md-6";
+    cardResponsive.className = "grosseDiv";
     cardResponsive.style.display = "flex";
+    cardResponsive.style.width = "50%";
     cardResponsive.style.justifyContent = "center";
-    cardResponsive.style.margin = "5px 0";
+    cardResponsive.style.padding = "0 10px";
     board.appendChild(cardResponsive);
     let cardDiv = document.createElement("div");
     cardDiv.className = "card";
@@ -76,7 +77,7 @@ function createCards(recipe) {
     cardImg.style = "width: auto";
     cardImg.style = "height: 50vh";
     cardImg.style.backgroundImage = `url(${recipe.imgSrc})`;
-    cardImg.style.backgroundSize = "100%";
+    cardImg.style.backgroundSize = "cover";
     cardImg.style.backgroundRepeat = "no-repeat";
     cardImg.style.backgroundPosition = "center";
     cardImg.style.borderRadius = "10% 10% 0 0";
@@ -107,3 +108,39 @@ function createCards(recipe) {
     cardSubDiv.appendChild(delButton);
   });
 }
+
+$("#contact-form").bootstrapValidator({
+  //        live: 'disabled',
+  message: "This value is not valid",
+  feedbackIcons: {
+    valid: "glyphicon glyphicon-ok",
+    invalid: "glyphicon glyphicon-remove",
+    validating: "glyphicon glyphicon-refresh",
+  },
+  fields: {
+    Name: {
+      validators: {
+        notEmpty: {
+          message: "The Name is required and cannot be empty",
+        },
+      },
+    },
+    email: {
+      validators: {
+        notEmpty: {
+          message: "The email address is required",
+        },
+        emailAddress: {
+          message: "The email address is not valid",
+        },
+      },
+    },
+    Message: {
+      validators: {
+        notEmpty: {
+          message: "The Message is required and cannot be empty",
+        },
+      },
+    },
+  },
+});

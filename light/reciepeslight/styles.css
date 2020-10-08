@@ -29,10 +29,12 @@ a:visited {
   list-style: none;
 }
 .item > a {
-  color: black;
+  color: black !important;
   font-size: larger;
 }
-
+nav .navbar-nav li a {
+  color: white !important;
+}
 .item > a:hover {
   color: #ccc;
   text-decoration: none;
